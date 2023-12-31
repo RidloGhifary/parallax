@@ -3,3 +3,90 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+body,
+html {
+  height: 100%;
+  font: 400 15px/1.8 "Lato", sans-serif;
+}
+
+@mixin position() {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 100%;
+  text-align: center;
+  color: #000;
+  font-size: 27px;
+  letter-spacing: 8px;
+  text-transform: uppercase;
+}
+
+@mixin image($url) {
+  background-image: url($url);
+}
+
+@mixin backgroundColor($colorbg, $color) {
+  background-color: $colorbg;
+  color: $color;
+}
+
+.image-1,
+.image-2,
+.image-3 {
+  position: relative;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.button {
+  color: white;
+  text-shadow: 2px 2px 2px #0000007a;
+}
+
+.image-1 {
+  @include image("/assets/img-1.jpg");
+  min-height: 100vh;
+  .caption {
+    @include position();
+  }
+}
+
+.content {
+  text-align: center;
+  @include backgroundColor(rgb(39, 39, 39), #fff);
+  padding: 50px;
+  letter-spacing: 2px;
+  p {
+    text-align: justify;
+    line-height: 1.5;
+    color: gray;
+  }
+}
+
+.image-2 {
+  @include image("/assets/img-2.jpg");
+  min-height: 400px;
+  .caption {
+    @include position();
+  }
+}
+
+.box {
+  position: relative;
+  .item {
+    @include backgroundColor(rgb(39, 39, 39), #fff);
+    text-align: center;
+    padding: 50px;
+  }
+}
+
+.image-3 {
+  @include image("/assets/img-3.jpg");
+  min-height: 400px;
+  .caption {
+    @include position();
+  }
+}

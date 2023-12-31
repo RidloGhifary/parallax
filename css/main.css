@@ -2,4 +2,96 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+body,
+html {
+  height: 100%;
+  font: 400 15px/1.8 "Lato", sans-serif;
+}
+
+.image-1,
+.image-2,
+.image-3 {
+  position: relative;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.button {
+  color: white;
+  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.4784313725);
+}
+
+.image-1 {
+  background-image: url("/assets/img-1.jpg");
+  min-height: 100vh;
+}
+.image-1 .caption {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 100%;
+  text-align: center;
+  color: #000;
+  font-size: 27px;
+  letter-spacing: 8px;
+  text-transform: uppercase;
+}
+
+.content {
+  text-align: center;
+  background-color: rgb(39, 39, 39);
+  color: #fff;
+  padding: 50px;
+  letter-spacing: 2px;
+}
+.content p {
+  text-align: justify;
+  line-height: 1.5;
+  color: gray;
+}
+
+.image-2 {
+  background-image: url("/assets/img-2.jpg");
+  min-height: 400px;
+}
+.image-2 .caption {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 100%;
+  text-align: center;
+  color: #000;
+  font-size: 27px;
+  letter-spacing: 8px;
+  text-transform: uppercase;
+}
+
+.box {
+  position: relative;
+}
+.box .item {
+  background-color: rgb(39, 39, 39);
+  color: #fff;
+  text-align: center;
+  padding: 50px;
+}
+
+.image-3 {
+  background-image: url("/assets/img-3.jpg");
+  min-height: 400px;
+}
+.image-3 .caption {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 100%;
+  text-align: center;
+  color: #000;
+  font-size: 27px;
+  letter-spacing: 8px;
+  text-transform: uppercase;
 }/*# sourceMappingURL=main.css.map */
